@@ -21,7 +21,8 @@ module load cctools
 
 We need to launch the workflow in the screen session or tmux session. 
 screen
-makeflow -T slurm -J 400 ./sample_example_slrm.mf &
+makeflow -T slurm -J 20 ./sample_example_slrm.mf &
+Here the option -J 20 refers to the maximum number of jobs that can be submitted at any given time. 
 
 
 
