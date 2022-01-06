@@ -1,0 +1,11 @@
+BATCH_OPTIONS = -p main -n 1 -t 0:10:00 -J short-ex-mf -o ./SlrmOut/slurm.%N.%j.out -e ./SlrmOut/slurm.%N.%j.err 
+Output/dummy_1.txt : Input/dummy_1.pdb
+    ./myexe.sh Input/dummy_1.pdb > Output/dummy_1.txt
+Output/dummy_3.txt : Input/dummy_3.pdb
+    ./myexe.sh Input/dummy_3.pdb > Output/dummy_3.txt
+Output/dummy_5.txt : Input/dummy_5.pdb
+    ./myexe.sh Input/dummy_5.pdb > Output/dummy_5.txt
+Output/dummy_7.txt : Input/dummy_7.pdb
+    ./myexe.sh Input/dummy_7.pdb > Output/dummy_7.txt
+Output/dummy_9.txt : Input/dummy_9.pdb
+    ./myexe.sh Input/dummy_9.pdb > Output/dummy_9.txt
